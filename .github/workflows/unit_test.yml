@@ -18,6 +18,7 @@ jobs:
         sudo apt-get full-upgrade --assume-yes
         sudo apt install --assume-yes \
           build-essential \
+          libfile-tail-perl \
           libio-stringy-perl
     - name: Generate Makefile
       run:  perl Makefile.PL
