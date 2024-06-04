@@ -17,7 +17,8 @@ jobs:
         sudo apt-get update
         sudo apt-get full-upgrade --assume-yes
         sudo apt install --assume-yes \
-          build-essential
+          build-essential \
+          libio-stringy-perl
     - name: Generate Makefile
       run:  perl Makefile.PL
     - name: Run unit tests
