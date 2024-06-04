@@ -21,7 +21,8 @@ jobs:
         sudo apt install --assume-yes \
           build-essential \
           libfile-tail-perl \
-          libio-stringy-perl
+          libio-stringy-perl \
+          locales-all
     - name: Generate Makefile
       run:  perl Makefile.PL
     - name: Run unit tests
