@@ -12,10 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Install dependencies
+    - name: Update installed OS packages
       run:  |
         sudo apt-get update
         sudo apt-get full-upgrade --assume-yes
+    - name: Install dependencies
+      run:  |
         sudo apt install --assume-yes \
           build-essential \
           libfile-tail-perl \
