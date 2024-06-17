@@ -4,6 +4,7 @@ Makefile.PL
 MANIFEST
 README
 lib/Parse/Syslog.pm
+t/cpan-meta.t
 t/filetail.t
 t/gmt.t
 t/linux.t
