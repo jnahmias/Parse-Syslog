@@ -1,10 +1,27 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Parse-Syslog
-version:      1.10
-version_from: lib/Parse/Syslog.pm
-installdirs:  site
+--- #YAML:1.0
+# Metadata for use by CPAN
+name:               Parse-Syslog
+abstract:           simple interface to parse files written by syslog
+version:            1.10
+author:
+    -               David Schweikert <david@schweikert.ch>
+license:            perl_5
+distribution_type:  module
 requires:
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30_01
+                    Carp: 0
+                    IO::File: 0
+                    Symbol: 0
+                    Time::Local: '1.07_94'
+build_requires:
+                    ExtUtils::MakeMaker: 0
+                    File::Tail: 0
+                    IO::Scalar: 0
+                    POSIX: 0
+                    Test::CPAN::Meta::YAML: 0
+                    Test::More: 0
+meta-spec:
+    version:        1.4
+    url:            http://module-build.sourceforge.net/META-spec-v1.4.html
+installdirs:        site
+release_status:     stable
+generated_by:       Joseph Nahmias <joe@nahmias.net>
