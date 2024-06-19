@@ -24,6 +24,7 @@ jobs:
           build-essential \
           libfile-tail-perl \
           libio-stringy-perl \
+          libtest-cpan-meta-yaml-perl \
           locales-all
     - name: Generate Makefile
       run:  perl Makefile.PL
